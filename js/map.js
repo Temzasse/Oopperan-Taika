@@ -50,6 +50,8 @@ $(document).ready(function(e) {
                     ]
                     
                 });
+                
+                $('#opera_kartta_hotspots').mapster('resize', $('#opera_kartta_hotspots').width(), $('#opera_kartta_hotspots').height(), 0);
  
             }); 
         });
