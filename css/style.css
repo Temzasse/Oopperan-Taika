@@ -83,3 +83,17 @@ html, body {
     opacity: 0.8;
 }
 
+
+
+/* Kartta */
+#kartta{
+	padding: 20px;
+}
+#opera_kartta_hotspots{
+	width: 100%;
+	height: auto;
+}
+/*img[usemap], map area{
+    outline: none;
+}*/
+

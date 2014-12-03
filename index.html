@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	
 </head>
 
 <body>
     <div class="container-fluid main">
     	<div class="row row1">
     		<div class="col-xs-12 div1">
-    			<img src="kissa.png" class="cat" alt="cat">
+    			<img src="images/kissa.png" class="cat" alt="cat">
     		</div>	
         </div>
   	</div>
   	<div class="footer">
-  		<button class="btn btn-default btn-lg" data-toggle="modal" data-target="#mapModal">Avaa kartta</button>
+  		<button id="open-map" class="btn btn-default btn-lg" data-toggle="modal" data-target="#mapModal">Avaa kartta</button>
   	</div>
 
 	<div class="modal fade custom_modal" id="mapModal" tabindex="-1" role="dialog">
     	<div class="modal-dialog">
     		<div class="modal-content">
     			<div class="row">
-    				<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0">
-    					<img src="map.png" class="map" alt="map">
+    				<div id="kartta" class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
+    					
+                        <img name="opera_kartta_hotspots" src="opera_kartta_hotspots.png" width="962" height="768" id="opera_kartta_hotspots" usemap="#m_opera_kartta_hotspots" alt="" />
+                        <map name="m_opera_kartta_hotspots" id="m_opera_kartta_hotspots">
+                        <area shape="poly" group="permanto" coords="335,314,217,315,216,328,218,344,221,364,227,387,231,401,238,420,246,435,255,453,266,468,282,488,301,508,321,525,343,541,362,551,385,561,406,567,431,574,452,576,473,578,493,577,512,576,527,574,546,570,563,564,579,559,592,553,606,546,620,538,633,530,646,520,659,508,671,497,681,485,691,472,702,457,712,441,718,428,726,412,733,390,738,372,742,352,744,331,743,313,625,313,625,395,619,400,342,400,335,394" href="#permanto" alt="" />
+                        <area shape="rect" group="puvustamo" coords="484,94,744,186" href="#puvustamo" alt="" />
+                        <area shape="rect" group="kulissit" coords="216,94,480,186" href="#kulissit" alt="" />
+                        <area shape="poly" group="orkesteri" coords="338,314,623,314,623,397,338,397,338,314" href="#orkesteri" alt="" />
+                        <area shape="rect" group="lava" coords="216,186,745,311" href="#lava" alt="" />
+                        <area shape="poly" group="parvi" coords="265,651,695,651,713,637,731,618,746,599,760,581,772,565,785,542,795,517,806,490,813,463,818,437,821,411,821,387,821,363,818,338,814,311,807,287,800,266,795,252,785,233,773,211,764,196,759,188,751,181,749,189,750,208,749,227,749,249,749,268,749,288,749,302,748,312,746,329,743,358,739,380,730,409,718,436,703,461,685,485,664,509,642,526,623,541,593,556,563,569,531,577,482,581,444,579,417,573,385,563,345,545,322,529,294,505,271,479,253,453,236,422,224,391,218,366,215,341,213,330,213,318,213,306,213,293,213,182,208,183,203,188,198,198,190,208,184,220,176,235,170,250,163,265,157,281,152,296,148,314,143,333,141,354,140,376,140,398,141,420,144,444,150,469,156,493,165,518,176,541,186,560,198,578,209,594,222,609,233,622,248,637" href="#parvi" alt="" />
+                        <area shape="poly" group="koti" coords="264,655,696,655,696,749,264,749,264,655" href="#koti" alt="" />
+                        </map>
     				</div>
-    				<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0">
+    				<!--<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0">
     					<ul class="menuList">
     						<li>Kulissit</li>
     						<li>Puvustamo</li>
@@ -38,7 +47,7 @@
     						<li>Parvi 2</li>
     						<li>Sisäänkäynti</li>
     					</ul>	
-    				</div>
+    				</div>-->
     			</div>
     			<div class="row">
     				<div class="col-xs-12">
@@ -52,5 +61,63 @@
     	</div>
 	</div>  	
 </div>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.imagemapster.min.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
+
+<script type="text/javascript">
+    /*$(document).ready(function(e) {
+        $("#open-map").click(function(){
+
+            console.log("modal opened");
+            // wait until the modal transition is done
+            $(".modal-dialog").one($.support.transition.end, function(){
+                $('#opera_kartta_hotspots').mapster({
+                    fillColor: 'ff0000',
+                    fillOpacity: 0.3,
+                    singleSelect: true,
+                    //clickNavigate: true
+                    showToolTip: true,
+                    mapKey: "group",
+                    areas: [
+                        {
+                            key: 'koti',
+                            toolTip: 'koti'
+                        },
+                        {
+                            key: 'parvi',
+                            toolTip: 'parvi'
+                        },
+                        {
+                            key: 'permanto',
+                            toolTip: 'permanto'
+                        },
+                        {
+                            key: 'orkesteri',
+                            toolTip: 'orkesteri'
+                        },
+                        {
+                            key: 'lava',
+                            toolTip: 'lava'
+                        },
+                        {
+                            key: 'kulissit',
+                            toolTip: 'kulissit'
+                        },
+                        {
+                            key: 'puvustamo',
+                            toolTip: 'puvustamo'
+                        }
+                    ]
+                });
+                
+            }); 
+        });
+        
+    });*/
+</script>
+
 </body>
 </html>
