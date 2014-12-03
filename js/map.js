@@ -51,8 +51,9 @@ $(document).ready(function(e) {
                     
                 });
                 
-                $('#opera_kartta_hotspots').mapster('resize', $('#opera_kartta_hotspots').width(), $('#opera_kartta_hotspots').height(), 0);
- 
+                $(window).resize(function(){
+                    $('#opera_kartta_hotspots').mapster('resize', $('#kartta').width() );
+                });
             }); 
         });
         
