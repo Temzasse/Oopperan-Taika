@@ -52,6 +52,7 @@ $(document).ready(function(e) {
                 });
                 
                 $(window).resize(function(){
+                    // make map responsive
                     $('#opera_kartta_hotspots').mapster('resize', $('#kartta').width() );
                 });
             }); 
