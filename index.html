@@ -10,16 +10,37 @@
 
 <body>
     <div class="container-fluid main">
+    
     	<div class="row row1">
+    	
     		<div class="col-xs-12 div1">
-    			<img src="images/kissa.png" class="cat" alt="cat">
-    		</div>	
+    			<div id="cat-bubble-wrapper">
+    			
+	    			<div class="speech">
+	    				<div class="speech-content">
+			    			<h1>Tervetuloa!</h1>
+			    			<p>Moi minä olen kissa jee</p>
+			    			<p>ja esittelen sinulle oopperan</p>
+			    			<button class="btn btn-default">Jatka</button>
+		    			</div>
+	    			</div>
+	    			
+	    			<img src="images/kissa.png" class="cat" alt="cat">
+	    			
+    			</div>
+    		</div>
+    		
         </div>
+        
+        <div class="row row2">
+			<button id="open-map" class="btn btn-default btn-lg" data-toggle="modal" data-target="#mapModal">Avaa kartta</button>
+        </div>
+        
   	</div>
   	
-  	<div class="footer">
+  	<!--  <div class="footer">
   		<button id="open-map" class="btn btn-default btn-lg" data-toggle="modal" data-target="#mapModal">Avaa kartta</button>
-  	</div>
+  	</div>-->
 
 	<div class="modal fade custom_modal" id="mapModal" tabindex="-1" role="dialog">
     	<div class="modal-dialog">

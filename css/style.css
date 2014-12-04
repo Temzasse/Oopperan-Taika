@@ -1,23 +1,88 @@
 html, body {
-	background: url('http://static.panoramio.com/photos/large/39482808.jpg') no-repeat 50% 0% fixed;
-	background-size: cover;
+	/*background: url('http://static.panoramio.com/photos/large/39482808.jpg') no-repeat 50% 0% fixed;
+	background-size: cover;*/
+	background: url(../images/texture.png) repeat;
 	height: 100%;
 	width: 100%;
 }
 
 .main {
-    border: 30px solid rgba(75, 12, 12, 0.85);
-    border-bottom-width: 90px;
-    height: 100%;
+   /* border-bottom: 90px solid rgba(75, 12, 12, 0.85);*/
+    /*border-bottom-width: 90px;*/
+    /*height: 100%;*/
 } 
 
+/* Kissa ja Puhekupla */
 
-.row1 {
+#cat-bubble-wrapper{
+	padding: 15px;
 	height: 100%;
+	max-width: 400px;
+	display:block;
+	margin:0 auto;
+}
+.cat{
+	height: 50%;
+	display:block;
+	margin:0 auto;
+}
+div.speech
+{
+	padding: 15px;
+	position: relative;
+	margin-bottom: 40px;
+	max-height: 50%;
+	/*height: 100px;*/
+	text-align: center;
+	/*line-height: 100px;*/
+	background-color: #fff;
+	border: 5px solid #CDCDCD;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	-moz-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+}
+div.speech:before
+{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 30px;
+	top: 100%;
+	border: 25px solid;
+	border-color: #CDCDCD #CDCDCD transparent transparent;
+}
+div.speech:after
+{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 42px;
+	top: 100%;
+	border: 15px solid;
+	border-color: #fff #fff transparent transparent;
+}
+.speech-content{
+	overflow: scroll;
+}
+
+.main{
+	height:100vh;
+}
+.row1 {
+	height: 90%;
+}
+.row2{
+	height: 10%;
+	text-align:center;
 }
 .div1 {
 	text-align: center;
-	height: 100%;
+	
 }
 .div1 > img {
 	position: relative;
