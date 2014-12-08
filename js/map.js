@@ -25,11 +25,11 @@ $(document).ready(function(e) {
                         },
                         {
                             key: 'parvi',
-                            toolTip: 'Selvitä minkälainen etiketti oopperaan liityy.<br><br><a href="oopperan-etiketti.html"><button class="btn btn-default">Katso sivu!</button></a>',
+                            toolTip: 'Selvitä minkälainen etiketti oopperaan liityy.<br><br><a href="etiketti.html"><button class="btn btn-default">Katso sivu!</button></a>',
                         },
                         {
                             key: 'permanto',
-                            toolTip: 'Ooperalla on tarjota paljon erilaista aktiviteettia myös lapsille!<br><br><a href="oopperaa-lapsille.html"><button class="btn btn-default">Katso sivu!</button></a>',
+                            toolTip: 'Ooperalla on tarjota paljon erilaista aktiviteettia myös lapsille!<br><br><a href="lapsille.html"><button class="btn btn-default">Katso sivu!</button></a>',
                         },
                         {
                             key: 'orkesteri',
@@ -37,15 +37,15 @@ $(document).ready(function(e) {
                         },
                         {
                             key: 'lava',
-                            toolTip: 'Kuuntele pätkiä tunnetuimmista oopperoista ja katso videoita niistä.<br><br><a href="tunnetuimmat-oopperat.html"><button class="btn btn-default">Katso sivu!</button></a>',
+                            toolTip: 'Kuuntele pätkiä tunnetuimmista oopperoista ja katso videoita niistä.<br><br><a href="tunnetuimmat.html"><button class="btn btn-default">Katso sivu!</button></a>',
                         },
                         {
                             key: 'kulissit',
-                            toolTip: 'Tutustu mitä kaikkea vaaditaan oopperan tekemiseen.<br><br><a href="behind-the-scenes.html"><button class="btn btn-default">Katso sivu!</button></a>',
+                            toolTip: 'Tutustu mitä kaikkea vaaditaan oopperan tekemiseen.<br><br><a href="dokumentti.html"><button class="btn btn-default">Katso sivu!</button></a>',
                         },
                         {
                             key: 'puvustamo',
-                            toolTip: 'Oopperalla on pitkä historia Suomessa.<br><br><a href="oopperan-historia.html"><button class="btn btn-default">Katso sivu!</button></a>',
+                            toolTip: 'Oopperalla on pitkä historia Suomessa.<br><br><a href="historia.html"><button class="btn btn-default">Katso sivu!</button></a>',
                         }
                     ]
                     
