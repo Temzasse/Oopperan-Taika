@@ -16,16 +16,49 @@
     		<div class="col-xs-12 div1">
     			<div id="cat-bubble-wrapper">
     			
-	    			<div class="speech">
-	    				<div class="speech-content">
-			    			<h1>Tervetuloa!</h1>
-			    			<p>Moi minä olen kissa jee</p>
-			    			<p>ja esittelen sinulle oopperan</p>
-			    			<button class="btn btn-default">Jatka</button>
+    				<div class="speech-wrap">
+		    			<div class="speech">
+		    				<div class="speech-content">
+		    					<div data-order="0" class="speech-data first current">
+					    			<h1>Tervetuloa!</h1>
+					    			<p>Minä olen Tietäjä Kissa ja esittelen sinulle oopperan ihmeellisen maailman. Paina "Jatka" nappia niin kerron sinulle lisää oopperasta sekä opastan sinua käyttämään oopperan karttaa. </p>
+				    			</div>
+				    			<div data-order="1" class="speech-data">
+					    			<h1>Oopperan kartta</h1>
+					    			<p>Paina sivun alalaidassa olevaa "Avaa kartta" -painiketta avataksesi oopperan kartan. Kartan avulla voit liikkua ympäri oopperan monipuolista maailmaa.</p>
+				    			</div>
+				    			<div data-order="2" class="speech-data">
+					    			<h1>Oopperaa kaikille!</h1>
+					    			<p>Oopperalla on tarjota monenlaista ohjelmaa kaiken ikäisille lapsesta aikuiseen. Käytä edellä mainittua karttaa tutkiaksesi, mitä oopperalla on esimerkiksi tarjota lapsille ("Oopperaa lapsille" -osio).</p>
+				    			</div>
+				    			<div data-order="3" class="speech-data last">
+					    			<h1>Mitä ooppera on nykyään?</h1>
+					    			<p>Skrollaa alas päin tai paina tätä <a href="#opera-now"><button class="btn btn-default">mene</button></a> nappulaa lukeaksesi, mitä oopperalla on tarjota tänä päivänä.</p>
+				    			</div>
+				    			
+				    			<div class="speech-controls">
+				    				<button class="btn btn-default prev" style="display:none;">Edellinen</button>
+				    				<button class="btn btn-default next">Jatka</button>
+				    			</div>
+			    			</div>
 		    			</div>
 	    			</div>
-	    			
 	    			<img src="images/kissa.png" class="cat" alt="cat">
+	    			
+	    			<div id="opera-now">
+	    				<section>
+	    					<h1>Kansallisooppera tänään</h1>
+	    					<article>Suomen Kansallisooppera on korkean kansainvälisen tason ooppera- ja balettitalo. Kansallinen taidelaitos toimii koko Suomen hyväksi: Kansallisooppera on maan ainoa ammatillinen oopperatalo, Suomen Kansallisbaletti taas maan ainoa ammatillinen balettiryhmä, ammattikuoro on niin ikään Suomen ainoa ja orkesteri on kooltaan maan suurin. Vakinaisia työntekijöitä on 526, ja heidän lisäkseen talossa työskentelee vuosittain noin 900 vierailijaa eri tehtävissä. (Luvut ovat vuodelta 2013.) Rikas ohjelmisto on vaihteleva ja laaja. Kansallisoopperan tehtävä on esittää sekä aikaa kestäviä klassikkoja että uusia teoksia, maailmalta ja kotimaasta. </article>
+	    				</section>
+	    				<section>
+	    					<h2>Esityksiä kertyy yli 300 vuodessa</h2>
+	    					<article>Näytäntövuosi ulottuu elokuulta kesäkuulle. Vuodessa on noin kolmesataa esitystä, joista noin 190 päänäyttämöllä. Kauden aikana päänäyttämöllä nähdään noin 15 oopperatuotantoa ja 9 balettituotantoa. Ensi-iltoja päänäyttämöllä on vuosittain 7-8, joista 4-5 on uusia ooppera- ja 3-4 balettiproduktioita. Lisäksi Oopperassa voi kuulla orkesterikonsertteja, istahtaa ilmaismatineoissa, osallistua lapsille ja nuorille suunnattuihin esityksiin tai tavata oopperoiden ja balettien tekijöitä ilmaisissa yleisötilaisuuksissa.</article>
+	    				</section>
+	    				<section>
+	    					<h2>Teknisesti nykyaikainen näyttämö</h2>
+	    					<article>Nykyaikainen ja kansainväliset standardit täyttävä näyttämötekniikka mahdollistaa laadukkaat ooppera- ja balettiesitykset sekä yhteistuotannot ulkomaisten oopperatalojen kanssa. Suuren salin katsomossa on 1350 paikkaa, Alminsalissa 200–500 paikkaa. Päänäyttämön koko on 500 m2, näyttämötornin korkeus 28 m. Varsinaista näyttämöä ympäröivät sivu- ja takanäyttämöt, jotka mahdollistavat suurten lavaste-elementtien siirtelyn. Tarpeen mukaan näyttämö pyörii, nousee ja laskee lavastajan ja ohjaajan toiveiden mukaisesti. Näyttämölattia on jaettu neljään osaan, joita voidaan liikutella ylös tai alas lavastuksen tehokeinona sekä käyttää lavasteiden nostinhisseinä varastotiloista ylös näyttämölle. Myös orkesterisyvennyksen tasoa voidaan nostaa tai laskea ja sen kokoa muuttaa orkesterin kokoonpanon ja akustisen vaikutelman mukaan. Päänäyttämön teatteritekniikka ja orkesterisyvennys peruskorjattiin vuonna 2007 turvaamaan näyttämön turvallisuus ja käyttövarmuus. Tervetuloa tasokkaiden elämysten pariin!</article>
+	    				</section>
+	    			</div>
 	    			
     			</div>
     		</div>
@@ -192,6 +225,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.imagemapster.min.js"></script>
 <script type="text/javascript" src="js/map.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
 
 </body>
 </html>
