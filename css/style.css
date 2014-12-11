@@ -128,7 +128,7 @@ div.speech:after
 	border-color: #fff transparent transparent #fff;
 }
 .speech-content{
-	height:100%;
+	height:85%;
 	overflow: auto;
 }
 .speech-data{
