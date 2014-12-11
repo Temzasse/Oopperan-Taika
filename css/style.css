@@ -129,7 +129,7 @@ div.speech:after
 }
 .speech-content{
 	height:100%;
-	overflow: scroll;
+	overflow: auto;
 }
 .speech-data{
 	display: none;
@@ -156,7 +156,7 @@ div.speech:after
 }
 .row1 {
 	height: 90%;
-	overflow: scroll;
+	overflow: auto;
 	color:#fff;
 }
 .row2{
