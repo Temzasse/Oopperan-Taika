@@ -34,6 +34,36 @@ $( document ).ready(function() {
 			$(".next").show();
 		}
 	});
+
+
+	//TODO: tähän jotain järkevämpää
+	var targets = ["target1", "target2", "target3", "target4", "target5"];
+	var current = -1;
+
+	$("#nextBtn").click(function() {
+		if(current < targets.length - 1) {
+			if(current == -1) {
+				current = 0;
+			} else {
+				current++;
+			}
+			var target = $("#" + targets[current]);
+			$("#row1").animate({
+				scrollTop: target.position().top
+			}, 1000);
+		}
+	});
+
+	$("#prevBtn").click(function() {
+		if(current > 0) {
+			current--;
+			var target = $("#" + targets[current]);
+			$("#row1").animate({
+				scrollTop: target.position().top
+			}, 1000);
+		}
+	});
+	
 	
 	
 	
