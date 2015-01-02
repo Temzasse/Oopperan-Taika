@@ -46,11 +46,10 @@ $( document ).ready(function() {
 
 
 	//TODO: tähän jotain järkevämpää
-	var targets = ["target1", "target2", "target3", "target4", "target5"];
+	var targets = ["target1", "target2", "target3", "target4", "target5", "target6"];
 	var current = -1;
 
 	$("#nextBtn").click(function() {
-		console.log("klik");
 		if(current < targets.length - 1) {
 			if(current == -1) {
 				current = 0;
