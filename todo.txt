@@ -1,6 +1,13 @@
 TODO:
 
-- tietovisa lapsille.html sivulle (Eero)
+- Tietovisa lapsille.html sivulle (Eero)
 	--> voi käyttää CLI tietovisaa hyväksi!
-- smooth scroll valmiiksi, jos on vielä jotain tehtävää siinä (Eero)
-- ohjeita / kommentteja antava hahmo sivun laitaan (Teemu)
+
+- Smooth scroll valmiiksi, jos on vielä jotain tehtävää siinä (Eero)
+
+- Ohjeita / kommentteja antava hahmo sivun laitaan (Teemu)
+
+- Eri osioiden sisällöt:
+	- lapsille sivun tekstit pitää kehitellä itse oopperan sivustolta
+	- historia sivun sisältö pitää tiivistää oopperan kattavasta tekstistä
+	- dokumentti sivun sisällöstä ei ole mitään hajua...
