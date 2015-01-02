@@ -27,7 +27,7 @@ h3{
 }
 .main-content-wrapper{
 	background: url("../images/texture.png") repeat;
-	margin-top: 80px;
+	/*margin-top: 80px;*/
 	border-top: 8px solid #fff;
 	padding: 15px;
 	box-shadow: 0px 5px 40px #000;
@@ -116,8 +116,8 @@ div.speech
 	color: #444;
 	padding: 15px;
 	position: relative;
-	height: 90%;
-	/*background-color: #fff;*/
+	/*height: 90%;
+	background-color: #fff;*/
 	background: rgba(255,255,255,0.8);
 	border: 5px solid #660000;
 	-webkit-border-radius: 30px;
@@ -172,7 +172,7 @@ div.speech:after
 
 .speech-content{
 	height:85%;
-	overflow: auto;
+	/*overflow: auto;*/
 }
 .speech-data{
 	display: none;
@@ -181,13 +181,24 @@ div.speech:after
 	display:block;
 }
 .speech-controls{
-	position:absolute;
-	bottom: 10px;
+	position: relative;
+	/*bottom: 10px;*/
 }
 /*-------------------------------------*/
 
 
+/* Opas sivun laidassa */
+.guide-wrapper{
+	position: fixed;
+	right: 0;
+	bottom: 10%;
+}
+.character-guide{
+	width: 100%;
+	padding: 20%;
+}
 
+/*-------------------------------------*/
 
 /*-------------------------------------*/
 /* Sisäänkäynti (Etusivu) */

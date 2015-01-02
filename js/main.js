@@ -1,5 +1,14 @@
 $( document ).ready(function() {
 	
+	$( ".row1" ).scroll( function(){
+		if( $(".row1").scrollTop() >= ($(window).height() - 100) ){
+			$(".guide-wrapper").fadeIn();
+		}
+		else{
+			$(".guide-wrapper").fadeOut();
+		}
+	});
+
 	$(".next").click(function(){
 		var currentIndex = $(".current").data("order");
 		var nextIndex = currentIndex + 1;
