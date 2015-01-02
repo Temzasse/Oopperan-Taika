@@ -41,6 +41,7 @@ $( document ).ready(function() {
 	var current = -1;
 
 	$("#nextBtn").click(function() {
+		console.log("klik");
 		if(current < targets.length - 1) {
 			if(current == -1) {
 				current = 0;
