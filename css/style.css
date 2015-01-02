@@ -117,14 +117,15 @@ div.speech
 	padding: 15px;
 	position: relative;
 	height: 90%;
-	background-color: #fff;
-	border: 5px solid #CDCDCD;
+	/*background-color: #fff;*/
+	background: rgba(255,255,255,0.8);
+	border: 5px solid #660000;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
-	-webkit-box-shadow: 2px 2px 4px #888;
-	-moz-box-shadow: 2px 2px 4px #888;
-	box-shadow: 2px 2px 4px #888;
+	-webkit-box-shadow: 2px 2px 4px #000;
+	-moz-box-shadow: 2px 2px 4px #000;
+	box-shadow: 2px 2px 4px #000;
 }
 div.speech h1{
 	margin-top: 5px !important;
@@ -137,7 +138,7 @@ div.speech:before
 	height: 0;
 	top: 100%;
 	border: 25px solid;
-	border-color: #CDCDCD #CDCDCD transparent transparent;
+	border-color: #660000 #660000 transparent transparent;
 }
 div.speech:after
 {
@@ -147,26 +148,26 @@ div.speech:after
 	height: 0;
 	top: 100%;
 	border: 15px solid;
-	border-color: #fff #fff transparent transparent;
+	border-color: transparent transparent transparent transparent;
 }
 
 /* kolmio vasemmalla */
 .speech-left.speech:before{
 	left: 30px;
-	border-color: #CDCDCD #CDCDCD transparent transparent;
+	border-color: #660000 #660000 transparent transparent;
 }
 .speech-left.speech:after{
 	left: 42px;
-	border-color: #fff #fff transparent transparent;
+	border-color: transparent transparent transparent transparent;
 }
 /* kolmio oikealla */
 .speech-right.speech:before{
 	right: 30px;
-	border-color: #CDCDCD transparent transparent #CDCDCD;
+	border-color: #660000 transparent transparent #660000;
 }
 .speech-right.speech:after{
 	right: 42px;
-	border-color: #fff transparent transparent #fff;
+	border-color: transparent transparent transparent transparent;
 }
 
 .speech-content{
@@ -220,22 +221,22 @@ div.speech:after
 	background-image: url("../images/oopperatalo_1.jpg");
 }
 .balette-page{
-	background-image: url("../images/baletti_2.jpg");
+	background-image: url('../images/curtain.png'), url("../images/baletti_2.jpg");
 }
 .famous-operas-page{
 	background-image: url('../images/curtain.png'), url("../images/opera_2.jpg");
 }
 .history-page{
-	background-image: url("../images/historia_1.jpg");
+	background-image: url('../images/curtain.png'), url("../images/historia_1.jpg");
 }
 .kids-page{
-	background-image: url('../images/lapsille_1.jpg');
+	background-image: url('../images/curtain.png'), url('../images/lapsille_1.jpg');
 }
 .document-page{
-	background-image: url("../images/dokumentti_1.jpg");
+	background-image: url('../images/curtain.png'), url("../images/dokumentti_1.jpg");
 }
 .etiquette-page{
-	background-image: url('../images/etiketti_1.jpg');
+	background-image: url('../images/curtain.png'), url('../images/etiketti_1.jpg');
 }
 
 
