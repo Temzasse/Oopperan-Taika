@@ -32,6 +32,9 @@ h3{
 	padding: 15px;
 	box-shadow: 0px 5px 40px #000;
 }
+.main-content-wrapper section{
+	margin-bottom: 50px;
+}
 .row1 {
 	height: 90%;
 	overflow: scroll;
@@ -195,7 +198,9 @@ div.speech:after
 }
 .character-guide{
 	width: 100%;
-	padding: 20%;
+	padding-top: 20%;
+	padding-left: 20%;
+	padding-right: 20%;
 }
 
 /*-------------------------------------*/
@@ -256,9 +261,11 @@ div.speech:after
 /* Tunnetut Oopperat */
 
 #famous-operas section{
-	margin-bottom:20px;
 	border-bottom: 4px solid #eee;
 }
 #famous-operas section article{
 	padding: 10px;
+}
+#famous-operas h2{
+	font-size: 32px;
 }
