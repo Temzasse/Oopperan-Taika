@@ -216,6 +216,9 @@ div.speech:after
 /*-------------------------------------*/
 
 /* Sivujen taustakuvat */
+.home-page{
+	background-image: url("../images/oopperatalo_1.jpg");
+}
 .balette-page{
 	background-image: url("../images/baletti_2.jpg");
 }
