@@ -14,11 +14,11 @@ $(document).ready(function(e) {
                     fillColor: 'ff0000',
                     fillOpacity: 0.3,
                     singleSelect: true,
-                    //clickNavigate: true
-                    isSelectable: true,
+                    clickNavigate: true,
+                    //isSelectable: true,
                     //showToolTip: true,
-                    mapKey: "group",
-                    areas: [
+                    mapKey: "group"
+                    /*areas: [
                         {
                             key: 'koti',
                             toolTip: 'Tutustu oopperan tämän hetkiseen tilanteeseen.<br><br><a href="index.html"><button class="btn btn-default">Katso sivu!</button></a>',
@@ -47,7 +47,7 @@ $(document).ready(function(e) {
                             key: 'puvustamo',
                             toolTip: 'Oopperalla on pitkä historia Suomessa.<br><br><a href="historia.html"><button class="btn btn-default">Katso sivu!</button></a>',
                         }
-                    ]
+                    ]*/
                     
                 });
                 
