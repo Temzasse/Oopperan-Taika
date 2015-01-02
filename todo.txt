@@ -1,0 +1,6 @@
+TODO:
+
+- tietovisa lapsille.html sivulle (Eero)
+	--> voi käyttää CLI tietovisaa hyväksi!
+- smooth scroll valmiiksi, jos on vielä jotain tehtävää siinä (Eero)
+- ohjeita / kommentteja antava hahmo sivun laitaan (Teemu)
