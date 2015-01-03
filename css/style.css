@@ -11,7 +11,7 @@ h1, h2, h3{
 	font-weight: 700;
 }
 h1{
-	font-size: 24px;
+	font-size: 32px;
 }
 h2{
 	font-size: 22px;
@@ -34,7 +34,14 @@ h3{
 }
 .main-content-wrapper section{
 	margin-bottom: 50px;
+	border-bottom: 4px solid #eee;
 }
+.main-content-wrapper section article{
+	padding: 10px;
+}
+/*.main-content-wrapper h2{
+	font-size: 32px;
+}*/
 .row1 {
 	height: 90%;
 	overflow: scroll;
@@ -202,6 +209,9 @@ div.speech:after
 	padding-left: 20%;
 	padding-right: 20%;
 }
+.guide-content:not(.show-first){
+	display: none;
+}
 
 /*-------------------------------------*/
 
@@ -257,15 +267,5 @@ div.speech:after
 
 
 
-/*-------------------------------------*/
-/* Tunnetut Oopperat */
 
-#famous-operas section{
-	border-bottom: 4px solid #eee;
-}
-#famous-operas section article{
-	padding: 10px;
-}
-#famous-operas h2{
-	font-size: 32px;
-}
+
