@@ -132,7 +132,7 @@ div.speech
 	/*height: 90%;
 	background-color: #fff;*/
 	background: rgba(255,255,255,0.8);
-	border: 5px solid #660000;
+	border: 5px solid #993333;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
@@ -151,7 +151,7 @@ div.speech:before
 	height: 0;
 	top: 100%;
 	border: 25px solid;
-	border-color: #660000 #660000 transparent transparent;
+	border-color: #993333 #993333 transparent transparent;
 }
 div.speech:after
 {
@@ -167,7 +167,7 @@ div.speech:after
 /* kolmio vasemmalla */
 .speech-left.speech:before{
 	left: 30px;
-	border-color: #660000 #660000 transparent transparent;
+	border-color: #993333 #993333 transparent transparent;
 }
 .speech-left.speech:after{
 	left: 42px;
@@ -176,7 +176,7 @@ div.speech:after
 /* kolmio oikealla */
 .speech-right.speech:before{
 	right: 30px;
-	border-color: #660000 transparent transparent #660000;
+	border-color: #993333 transparent transparent #993333;
 }
 .speech-right.speech:after{
 	right: 42px;
