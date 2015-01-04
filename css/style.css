@@ -112,7 +112,7 @@ h3{
 #character-bubble-wrapper{
 	padding: 15px;
 	height: 100%;
-	max-width: 400px;
+	max-width: 500px;
 	display:block;
 	margin:0 auto;
 }
@@ -139,6 +139,26 @@ div.speech
 	-webkit-box-shadow: 2px 2px 4px #000;
 	-moz-box-shadow: 2px 2px 4px #000;
 	box-shadow: 2px 2px 4px #000;
+}
+div.speech-main{
+	display: inline-block;
+	/*height: 90%;*/
+	padding-left: 5px;
+	padding-right: 5px;
+}
+div.speech-main .speech-content{
+	width: 90%;
+	float: left;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+div.speech-main .prev, div.speech-main .next{
+	width: 5%;
+	height: 100%;
+	float: left;
+}
+.prev span, .next span{
+	font-size: 20px;
 }
 div.speech h1{
 	margin-top: 5px !important;
@@ -204,11 +224,11 @@ div.speech:after
 .guide-wrapper{
 	position: fixed;
 	right: 0;
-	bottom: 10%;
+	bottom: 15px;
 }
 .character-guide{
 	width: 100%;
-	padding-top: 20%;
+	padding-top: 30px;
 	padding-left: 20%;
 	padding-right: 20%;
 }

@@ -42,10 +42,8 @@ $( document ).ready(function() {
 
 
 
-
-
-
-
+	$(".next span, .prev span").css({ top: ($(".speech-main").height() / 2) - 10 });
+	
 	$(".next").click(function(){
 		var currentIndex = $(".current").data("order");
 		var nextIndex = currentIndex + 1;
@@ -57,11 +55,12 @@ $( document ).ready(function() {
 			nextContent.addClass("current");
 		}
 		if( nextIndex >= 1){
-			$(".prev").show();
+			$(".prev span").show();
 		}
 		if( nextContent.hasClass("last") ){
-			$(".next").hide();
+			$(".next span").hide();
 		}
+		$(".next span, .prev span").css({ top: ($(".speech-main").height() / 2) - 10 });
 	});
 	$(".prev").click(function(){
 		var currentIndex = $(".current").data("order");
@@ -74,11 +73,12 @@ $( document ).ready(function() {
 			prevContent.addClass("current");
 		}
 		if( prevIndex === 0){
-			$(".prev").hide();
+			$(".prev span").hide();
 		}
 		if( currentContent.hasClass("last") ){
-			$(".next").show();
+			$(".next span").show();
 		}
+		$(".next span, .prev span").css({ top: ($(".speech-main").height() / 2) - 10 });
 	});
 
 
