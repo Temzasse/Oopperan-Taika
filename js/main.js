@@ -1,13 +1,12 @@
 $( document ).ready(function() {
 	
 
-
-
 	// määrittele mitä ohjekuplassa näkyy
 	var triggers = $(".guide-trigger");
 	var all_guide_content = $(".guide-content");
 	var vh = $(window).height();
 	var of;
+	var old = $("section").first();
 
 	$( ".row1" ).scroll( function(){
 		
@@ -15,19 +14,20 @@ $( document ).ready(function() {
 			$(".guide-wrapper").fadeIn();
 
 			triggers.each(function(i){
-				of = $(this).offset();
-				// kun skrollataan of.top ei saa jatkuvasti arvoja
-				// minkä takia täytyy testata lukuväliä
-				if ( of.top < (70) && of.top > (60)){
+
+				of = Math.abs( $(this).offset().top );
+				
+				if ( of < Math.abs(old.offset().top) ){
 					showGuideContent(i);
+					old = $(this);
 				}
-			});
+			});			
+			
 		}
 		else{
 			$(".guide-wrapper").fadeOut();
 		}
 	});
-
 
 	function showGuideContent( index ){
 		all_guide_content.each(function(j){
