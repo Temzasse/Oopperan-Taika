@@ -13,6 +13,9 @@ h1, h2, h3{
 	font-style: italic;
 	font-weight: 700;
 }
+p, article{
+	text-align: justify;
+}
 h1{
 	font-size: 32px;
 }
@@ -21,6 +24,9 @@ h2{
 }
 h3{
 	font-size: 18px;
+}
+img{
+	max-width: 100%;
 }
 .main {
 	height:100vh;
@@ -148,18 +154,20 @@ div.speech-main{
 	padding-right: 5px;
 }
 div.speech-main .speech-content{
-	width: 90%;
+	width: 80%;
 	float: left;
 	padding-left: 4px;
 	padding-right: 4px;
 }
 div.speech-main .prev, div.speech-main .next{
-	width: 5%;
+	width: 10%;
 	height: 100%;
 	float: left;
 }
 .prev span, .next span{
 	font-size: 20px;
+	text-align: center;
+	width: 100%;
 }
 div.speech h1{
 	margin-top: 5px !important;
@@ -290,6 +298,10 @@ div.speech:after
 }
 
 
-
+@media(max-width: 500px){
+	#character-bubble-wrapper{
+		padding: 0px;
+	}
+}
 
 
