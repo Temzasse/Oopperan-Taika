@@ -5,18 +5,18 @@ TODO:
 
 - Smooth scroll valmiiksi, jos on vielä jotain tehtävää siinä (Eero)
 
-- Ohjeita / kommentteja antava hahmo sivun laitaan (Teemu)
+- Ohjeita / kommentteja antava hahmo sivun laitaan (Teemu) DONE!
 
 - Eri osioiden sisällöt:
-	- lapsille sivun tekstit pitää kehitellä itse oopperan sivustolta
-	- historia sivun sisältö pitää tiivistää oopperan kattavasta tekstistä
-	- dokumentti sivun sisällöstä ei ole mitään hajua...
+	- lapsille sivun tekstit pitää kehitellä itse oopperan sivustolta DONE!
+	- historia sivun sisältö pitää tiivistää oopperan kattavasta tekstistä DONE!
+	- dokumentti sivun sisällöstä ei ole mitään hajua... DONE!
 
-- Kuvien väritys (Teemu)
+- Kuvien väritys (Teemu) DONE!
 
-- Etusivun kuvan oikeuksien selvittäminen (Teemu)
+- Etusivun kuvan oikeuksien selvittäminen (Teemu) DONE!
 
-- taustalle voisi lisätä musiikkia?
+- taustalle voisi lisätä musiikkia? NOPE!
 
 
 MATSKUA:
@@ -35,4 +35,4 @@ Kulissien takana:
 
 Histori:
 	- http://www.ooppera.fi/esittely/oopperan_abc/kansallisoopperan_historiaa/ensimmaiset_sata_vuotta
-	--> tää pitää tiivistää
+	--> tää pitää tiivistää (ei väldee kyl tartte eikä jaksa)
