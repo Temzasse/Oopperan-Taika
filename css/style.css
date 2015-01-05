@@ -313,3 +313,38 @@ div.speech:after
 }
 
 
+/* Tietovisa */
+
+.quiz {
+	display: none;
+	background-color: rgba(170,92,92, 0.7); 
+	margin: 5px; 
+	padding: 15px; 
+	border-radius: 9px; 
+	border: 1px solid rgb(248,248,248);
+	height: 235px;
+}
+.quiz.current {
+	display: block;
+}
+.quiz > p.answer {
+	color: rgb(227,219,219); 
+	margin-bottom: 15px;
+}
+.quiz > p.answer:hover {
+	color: rgb(255,255,255);
+}
+
+.result {
+	display: none;
+	background-color: rgba(170,92,92, 0.7); 
+	margin: 5px; 
+	padding: 15px; 
+	border-radius: 9px; 
+	border: 1px solid rgb(248,248,248);
+	height: 235px;
+}
+.result.showresult {
+	display: block;
+}
+

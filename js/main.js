@@ -110,8 +110,35 @@ $( document ).ready(function() {
 		}
 	});
 	
-	
-	
-	
+
+
+	//Tietovisa
+
+	var count = 0;
+
+	$(".answer").click(function(event){
+
+		var target = $(event.target);
+		if(target.hasClass("correct")) {
+			count++;
+		}
+
+		var currentIndex = $(".quiz.current").data("order");
+		var nextIndex = currentIndex + 1;
+		var currentContent = $(".quiz-content").find("[data-order='" + currentIndex + "']");
+		var nextContent = $(".quiz-content").find("[data-order='" + nextIndex + "']");
+		
+		if(nextContent){
+			if(!(currentContent.hasClass("last"))) {
+				currentContent.removeClass("current");
+				nextContent.addClass("current");
+			} else {
+				currentContent.removeClass("current");
+				$(".result").addClass("showresult");
+				$(".result").append("<p><b>Sait " + count + "/8 oikein!</b></p>");
+			}
+		}
+
+	});	
 	
 });
