@@ -297,7 +297,15 @@ div.speech:after
 	background-image: url('../images/curtain.png'), url('../images/etiketti_1.jpg');
 }
 
-
+@media(max-width: 700px){
+	#character-bubble-wrapper{
+		padding: 0px;
+	}
+	div.speech-main{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
 @media(max-width: 500px){
 	#character-bubble-wrapper{
 		padding: 0px;
