@@ -82,30 +82,32 @@ $( document ).ready(function() {
 	});
 
 
-	//TODO: tähän jotain järkevämpää
-	var targets = ["target1", "target2", "target3", "target4", "target5", "target6"];
-	var current = -1;
+	//Smooth scrolling
+
+	var current = 0;
 
 	$("#nextBtn").click(function() {
-		if(current < targets.length - 1) {
-			if(current == -1) {
-				current = 0;
-			} else {
-				current++;
-			}
-			var target = $("#" + targets[current]);
+
+		var targets = $('[id^=target]');
+
+		if(current < targets.length) {
+			current++;
+			var target = $("#target" + current);
 			$("#row1").animate({
-				scrollTop: target.position().top
+				scrollTop: target.offset().top + $("#row1").scrollTop()
 			}, 1000);
 		}
 	});
 
 	$("#prevBtn").click(function() {
+
+		var targets = $('[id^=target]');
+
 		if(current > 0) {
 			current--;
-			var target = $("#" + targets[current]);
+			var target = $("#target" + current);
 			$("#row1").animate({
-				scrollTop: target.position().top
+				scrollTop: target.offset().top + $("#row1").scrollTop()
 			}, 1000);
 		}
 	});
