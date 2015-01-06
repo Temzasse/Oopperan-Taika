@@ -348,3 +348,9 @@ div.speech:after
 	display: block;
 }
 
+
+/* jQuery Mobile fix */
+
+.ui-loader { 
+	display: none;
+}	
