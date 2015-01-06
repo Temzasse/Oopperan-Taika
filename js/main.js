@@ -44,7 +44,8 @@ $( document ).ready(function() {
 
 	$(".next span, .prev span").css({ top: ($(".speech-main").height() / 2) - 10 });
 	
-	$(".next").click(function(){
+
+	function nextHandler() {
 		var currentIndex = $(".current").data("order");
 		var nextIndex = currentIndex + 1;
 		var currentContent = $(".speech-content").find("[data-order='" + currentIndex + "']");
@@ -61,8 +62,9 @@ $( document ).ready(function() {
 			$(".next span").hide();
 		}
 		$(".next span, .prev span").css({ top: ($(".speech-main").height() / 2) - 10 });
-	});
-	$(".prev").click(function(){
+	}
+
+	function prevHandler() {
 		var currentIndex = $(".current").data("order");
 		var prevIndex = currentIndex - 1;
 		var currentContent = $(".speech-content").find("[data-order='" + currentIndex + "']");
@@ -79,8 +81,16 @@ $( document ).ready(function() {
 			$(".next span").show();
 		}
 		$(".next span, .prev span").css({ top: ($(".speech-main").height() / 2) - 10 });
-	});
+	}
 
+	$(".speech").on("swipeleft", nextHandler);
+	$(".speech").on("swiperight", prevHandler);
+
+	$(".next").click(nextHandler);
+	$(".prev").click(prevHandler);
+
+	$.event.special.swipe.horizontalDistanceThreshold = 60
+	
 
 	//Smooth scrolling
 
