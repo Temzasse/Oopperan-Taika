@@ -41,7 +41,7 @@ public class MainFrame extends Application {
 
 		onEntranceSelected();
 
-		primaryStage.setTitle("Ooperan taika");
+		primaryStage.setTitle("Oopperan taika");
 		primaryStage.setScene(new Scene(root));
 		primaryStage.sizeToScene();
 		primaryStage.setMinWidth(1000);

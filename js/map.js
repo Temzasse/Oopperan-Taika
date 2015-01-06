@@ -29,7 +29,7 @@ $(document).ready(function(e) {
                         },
                         {
                             key: 'permanto',
-                            toolTip: 'Ooperalla on tarjota paljon erilaista aktiviteettia myös lapsille!<br><br><a href="lapsille.html"><button class="btn btn-default">Katso sivu!</button></a>',
+                            toolTip: 'Oopperalla on tarjota paljon erilaista aktiviteettia myös lapsille!<br><br><a href="lapsille.html"><button class="btn btn-default">Katso sivu!</button></a>',
                         },
                         {
                             key: 'orkesteri',
