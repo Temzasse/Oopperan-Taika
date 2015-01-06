@@ -97,6 +97,7 @@ public class NavigationMap extends BorderPane {
 				new BorderWidths(2))));
 
 		super.setTop(backgroundPane);
+		super.setPadding(new Insets(10, 0, 0, 10));
 	}
 
 	private Shape createEntranceShape(double scale) {

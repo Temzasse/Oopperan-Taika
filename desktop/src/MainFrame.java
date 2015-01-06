@@ -31,7 +31,7 @@ public class MainFrame extends Application {
 		content.setContextMenuEnabled(false);
 
 		BorderPane contentPane = new BorderPane();
-		contentPane.setPadding(new Insets(100, 50, 250, 50));
+		contentPane.setPadding(new Insets(100, 50, 100, 50));
 		contentPane.setCenter(content);
 
 		root = new HBox(navigation, contentPane, figure);
