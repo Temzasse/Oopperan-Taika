@@ -56,10 +56,10 @@ $( document ).ready(function() {
 			nextContent.addClass("current");
 		}
 		if( nextIndex >= 1){
-			$(".prev span").show();
+			$(".prev span").css("visibility", "visible");
 		}
 		if( nextContent.hasClass("last") ){
-			$(".next span").hide();
+			$(".next span").css("visibility", "hidden");
 		}
 		$(".next span, .prev span").css({ top: ($(".speech-main").height() / 2) - 10 });
 	}
@@ -75,10 +75,10 @@ $( document ).ready(function() {
 			prevContent.addClass("current");
 		}
 		if( prevIndex === 0){
-			$(".prev span").hide();
-		}
+			$(".prev span").css("visibility", "hidden");
+		}	
 		if( currentContent.hasClass("last") ){
-			$(".next span").show();
+			$(".next span").css("visibility", "visible");
 		}
 		$(".next span, .prev span").css({ top: ($(".speech-main").height() / 2) - 10 });
 	}
