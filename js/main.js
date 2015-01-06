@@ -89,7 +89,7 @@ $( document ).ready(function() {
 	$(".next").click(nextHandler);
 	$(".prev").click(prevHandler);
 
-	$.event.special.swipe.horizontalDistanceThreshold = 60
+	$.event.special.swipe.horizontalDistanceThreshold = 100
 	
 
 	//Smooth scrolling
