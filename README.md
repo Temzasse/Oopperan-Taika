@@ -1,5 +1,5 @@
-# Opera (UIC)
+# Oopperan Taika (User Interface Construction course)
 
-Tablet / mobile
+A mobile / tablet web application for the Finnish National Opera - A school project about user interface construction.
 
-
+The idea is to tell about the different aspects of the Finnish National Opera: famous operas, behind-the-scenes etc. We created 4 different cartoonlike characters to make the service more compelling to children.
